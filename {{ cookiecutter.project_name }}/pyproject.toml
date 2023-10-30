@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "{{ cookiecutter.project_name }}"
+version = "0.1.0"
+description = "{{ cookiecutter.project_description }}"
+license = "MIT"
+authors = ["{{ cookiecutter.author_full_name }} <{{ cookiecutter.author_email }}>"]
+maintainers = ["{{ cookiecutter.author_full_name }} <{{ cookiecutter.author_email }}>"]
+readme = "README.md"
+homepage = ""
+repository = ""
+documentation = ""
+keywords = [
+    "python",
+]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3 :: Only",
+]
+packages = [
+    { include = "{{ cookiecutter.project_name }}" },
+]
+
+[tool.poetry.dependencies]
+python = "^{{ cookiecutter.python_version }}"
+
+[tool.poetry.group.tests]
+optional = true
+
+[tool.poetry.group.tests.dependencies]
+python = "^{{ cookiecutter.python_version }}"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+python = "^{{ cookiecutter.python_version }}"

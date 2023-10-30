@@ -1,0 +1,8 @@
+{
+  "project_name": "python_project",
+  "project_description": "My Awesome Project",
+  "author_full_name": "John Doe",
+  "author_email": "johndoe@example.com",
+  "python_version": "3.11",
+  "license_year": 2007
+}
